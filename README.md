@@ -6,7 +6,7 @@ Note/Disclaimer:
 
 •	In the requirements, it mention “Aged Brie”, “Sulfures”, “Backstage passed” and “Conjured” as it is a type. However, in the existing code it is part of a longer name. As a result, I have changed UpdateQuality to look for the “words” rather than explicit matching the long name in the code.
 
-•	I wanted to design the solution to follow SOLID design principle and make it more testable and maintainable. I could not archive that because the requirements explicit mentions that I am not allowed to alter Item class or Items property. If I was allowed to alter it, I would have implemented “BusinessLogic”, “Interfaces” and “DependencyInjectionConfiguration” as a project and put “Item” in “Interfaces”. It is because “Item” is a DTO.
+•	I wanted to design the solution to follow SOLID design principle and make it more testable and maintainable. I could not archive that because the requirements explicit mentions that I am not allowed to alter Item class or Items property. If I was allowed to alter it, I would have implemented “BusinessLogic”, “Interfaces” and “DependencyInjectionConfiguration” as a project and put “Item” in “Interfaces”. It is because “Item” should be a shared DTO.
 
 After refactor:
 
